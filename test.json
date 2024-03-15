@@ -1,9 +1,27 @@
 {
   "Please enter your respiratory health conditions": "all okay",
-  "Do you use oxygen or peak flow meter?": "no",
+  "Do you use oxygen or peak flow meter?": "yes",
   "Do you use home respiratory equipment?": "no",
-  "Current medications, herbs, or supplements?": "none",
-  "Breathlessness level": "No",
+  "Current medications, herbs, or supplements?": "some supplements",
+  "Breathlessness level": "Mild",
   "Smoking/Vaping status": "No",
   "Interest in quitting smoking/vaping?": "Doesn't apply"
+}
+{
+  "Please enter your respiratory health conditions": "not sure",
+  "Do you use oxygen or peak flow meter?": "yes",
+  "Do you use home respiratory equipment?": "yes",
+  "Current medications, herbs, or supplements?": "some medications",
+  "Breathlessness level": "Hard",
+  "Smoking/Vaping status": "yes",
+  "Interest in quitting smoking/vaping?": "yes"
+}
+{
+  "Please enter your respiratory health conditions": "all okay",
+  "Do you use oxygen or peak flow meter?": "no",
+  "Do you use home respiratory equipment?": "no",
+  "Current medications, herbs, or supplements?": "no",
+  "Breathlessness level": "mild",
+  "Smoking/Vaping status": "yes",
+  "Interest in quitting smoking/vaping?": "no"
 }

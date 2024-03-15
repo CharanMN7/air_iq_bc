@@ -11,7 +11,6 @@ app.post("/precautions/short", async (req, res) => {
   personData["lon"] = req.body["lon"];
   personData["pData"] = req.body["data"];
   console.log(personData);
-  next();
   const response = await precautions.short(personData);
   console.log(req.socket.address());
   res.send(JSON.parse(response.text()));

@@ -38,4 +38,19 @@ app.post("/precautions/long", async (req, res) => {
   res.send(await handlePost(req.body, "long"));
 });
 
+app.post("/aqi", async (req, res) => {
+  const data = await fetch(
+    `https://api.waqi.info/feed/geo:${req.body.lat};${req.body.lon}/?token=6e4f6e00feba1e08cc548d4cc9fecc51de355508`
+  ).then((res) => res.json());
+  const value = data["data"]["aqi"];
+  const extra = data["data"]["iaqi"];
+  res.send({
+    aqi: value,
+    humidity: extra["h"]["v"],
+    dew: extra["dew"]["v"],
+    pm25: extra["pm25"]["v"],
+    temperature: extra["t"]["v"],
+  });
+});
+
 app.listen(3000);
